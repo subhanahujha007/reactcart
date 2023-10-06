@@ -1,0 +1,89 @@
+@import "colours";
+.cart{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:4fr 1fr;
+    >main{
+        padding: 2rem;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        >h1{
+            color: white;
+            font: 100 2rem "Roboto";
+
+        }
+    }
+    >aside{
+        border-radius: 100px 0 0 100px;
+        background-color: black;
+        color: beige;
+    height: 100%;
+
+    width: 100%;
+    box-shadow: -5px 0 5px rgb(255, 255,255 );
+display: flex;
+flex-direction: column;
+justify-content: center;
+>h2{
+    margin: 2rem;
+    letter-spacing: 2px;
+    font: 300 1rem "Roboto";
+    &:last-of-type{
+        font-weight: 600;
+    }
+}    
+}
+}
+.cartitem{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+>div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    >button{
+        height: 30px;
+        width: 30px;
+        background-color: crimson;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover{
+            background-color: rgb(56, 2, 13);
+        }
+    }
+    >p{
+        width: 30px;
+        height: 30px;
+        display: grid;
+        padding-left: 9px;
+        padding-top: 6px;
+        place-items: calc(center);
+        color: black;
+    }
+}
+>svg{
+    color: black;
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s;
+    &:hover{
+        transform: scale(2);
+        background-color: crimson;
+    }
+}
+}

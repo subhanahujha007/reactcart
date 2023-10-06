@@ -1,0 +1,43 @@
+@import "colours";
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6rem;
+    justify-content: center;
+}
+.products{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    width: 200px;
+    transition: all 0.4s;
+    color: black;
+    border-radius: 5px;
+    &:hover{
+        transform:scale(1.09);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h4{
+        margin: 1rem;
+    }
+    button{
+cursor: pointer;
+background-color: orangered;
+border-radius: 5px;
+width: 100%;
+font-weight: 500;
+border: none;
+padding: 1rem;
+transition: all 0.5s;
+&:hover{
+  background-color: rgb(165, 49, 7);
+}    
+
+}
+
+}

@@ -1,0 +1,18 @@
+@media screen and (max-width:820px) {
+    .cart{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+        >aside{
+            padding: 2rem;
+    >h2{
+        margin: 2rem;
+        letter-spacing: 2px;
+        font: 300 1rem "Roboto";
+        &:last-of-type{
+            font-weight: 600;
+        }
+    }    
+    }
+    }
+}
